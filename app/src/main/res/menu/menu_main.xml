@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="be.hcpl.android.example.MainActivity" >
+
+    <!-- an option that never appears as a fixed text/icon in the actionbar -->
+    <item android:id="@+id/action_one"
+        android:title="a"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <!-- another option that only appears if there is enough room -->
+    <item android:id="@+id/action_two"
+        android:title="b"
+        android:orderInCategory="200"
+        app:showAsAction="ifRoom" />
+
+    <!-- a last option that always appears -->
+    <item android:id="@+id/action_three"
+        android:title="c"
+        android:orderInCategory="300"
+        app:showAsAction="always" />
+
+    <!-- an option to show with both icon and text -->
+    <item android:id="@+id/action_four"
+        android:icon="@android:drawable/ic_menu_directions"
+        android:title="d"
+        android:orderInCategory="400"
+        app:showAsAction="withText|always" />
+
+    <!-- an option to always show as an icon only -->
+    <item android:id="@+id/action_five"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="e"
+        android:orderInCategory="500"
+        app:showAsAction="always" />
+
+</menu>
