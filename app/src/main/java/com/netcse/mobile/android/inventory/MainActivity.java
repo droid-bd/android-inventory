@@ -3,9 +3,6 @@
     Never Update Studio
  */
 
-
-
-
 package com.netcse.mobile.android.inventory;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
