@@ -2,12 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.netcse.mobile.android.inventory" >
 
-    <!--android:icon="@mipmap/ic_launcher"-->
+    <!-- android:icon="@mipmap/ic_launcher" -->
 
-    <!--JSON http://api.androidhive.info/contacts/ -->
+
+    <!-- JSON http://api.androidhive.info/contacts/ -->
     <!-- Internet Permission -->
-    <uses-permission android:name="android.permission.INTERNET"/>
-
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -16,19 +16,29 @@
         android:theme="@style/AppTheme" >
 
         <!-- Main Activity -->
+
+        <!--<activity-->
+            <!--android:name=".MainActivity"-->
+            <!--android:icon="@drawable/chicken"-->
+            <!--android:label="@string/app_name" >-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
+
+        <!-- Sub Activities -->
+
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
-            android:icon="@drawable/chicken">
+            android:name=".not.FirstActivity"
+            android:label="@string/title_activity_first" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <!-- Sub Activities -->
-
 
     </application>
 
